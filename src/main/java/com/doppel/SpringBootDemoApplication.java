@@ -1,4 +1,4 @@
-package com.doppel.SpringBootDemo;
+package com.doppel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
