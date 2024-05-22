@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalControllerExceptionHandler {
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<String> handleConflict() {
-        return ResponseEntity.internalServerError().body("fuck");
+    public ResponseEntity<String> handleConflict(Exception e) {
+        return ResponseEntity.internalServerError().body(e.getMessage());
     }
 }
